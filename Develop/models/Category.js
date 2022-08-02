@@ -8,8 +8,11 @@ Category.init(
   {
     id : {
       type: DataTypes.INTEGER,
-      allowNull: false,
-        
+      defaultValue: null,
+    },
+    category_name: {
+      type: DataTypes.STRING,
+      defaultvalue: null
     }
   },
   {
