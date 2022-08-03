@@ -36,10 +36,20 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
+  Category.update()
+    .then(updated_category => {
+      updated_item = res.json(updated_category)
+      console.log(updated_item);
+    })
 });
 
 router.delete('/:id', (req, res) => {
   // delete a category by its `id` value
+  Category.delete()
+    .then(deleted_category => {
+      deleted_item = res.json(deleted_category)
+      console.log(deleted_item)
+    })
 });
 
 module.exports = router;
