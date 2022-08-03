@@ -26,11 +26,8 @@ Category.findbyPk()
 });
 
 router.post('/', (req, res) => {
-  Category.create()
-    .then(new_category => {
-      created_item = res.json(new_category)
-      console.log(created_item)
-    })
+  Category.create({ group_name: req.body.group_name, project_url: req.body.project_url, is_finished: req.body.is_finished})
+  .then( data => res.json(data)); // this is responding with the created object 
   // create a new category
 });
 
