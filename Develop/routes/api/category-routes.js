@@ -22,9 +22,15 @@ Category.findbyPk()
 
   // find one category by its `id` value
   // be sure to include its associated Products
+  //what are the associated products????
 });
 
 router.post('/', (req, res) => {
+  Category.create()
+    .then(new_category => {
+      created_item = res.json(new_category)
+      console.log(created_item)
+    })
   // create a new category
 });
 
