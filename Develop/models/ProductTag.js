@@ -6,7 +6,10 @@ class ProductTag extends Model {}
 
 ProductTag.init(
   {
-    // define columns
+    tag_name : {
+      type: DataTypes.STRING,
+      defaultValue: null,
+    }
   },
   {
     sequelize,
