@@ -11,19 +11,19 @@ Product.init(
   {
  
     product_name : {
-      type: dataTypes.STRING,
+      type: DataTypes.STRING,
       defaultValues: null,
     },
     price : {
-      type: dataTypes.INTEGER,
+      type: DataTypes.INTEGER,
       defaultValues: null,
     },
     stock : {
-      type: dataTypes.INTEGER,
+      type: DataTypes.INTEGER,
       defaultValues:null
     },
     category_id: {
-      type: dataTypes.INTEGER,
+      type: DataTypes.INTEGER,
       defaultValues: null,
     }
   },
