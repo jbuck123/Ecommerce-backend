@@ -12,7 +12,7 @@
 ## Usage Information
     Application demonstrates relationships between tables and how to send data throuhg insomnia
 ### example of Use
-[Walkthrough Video](https://studio.youtube.com/video/xnI-awH70sk/edit)
+[Walkthrough Video](https://www.youtube.com/watch?v=6Ge-2PF1x_s)
 
 
 
